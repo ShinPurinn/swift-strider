@@ -21,21 +21,21 @@ while storing essential statistics using Room database.
 
 ## Package Structure
 
-* [`background`](app/src/main/java/com/kel2/SwiftStrider/background): Handles background related
+* [`background`](app/src/main/java/com/kel2/swiftstrider/background): Handles background related
   process like service.
-* [`data`](app/src/main/java/com/kel2/SwiftStrider/data): Responsible for producing data. Contains
+* [`data`](app/src/main/java/com/kel2/swiftstrider/data): Responsible for producing data. Contains
   entity, database and tracking related classes.
-    * [`tracking`](app/src/main/java/com/kel2/SwiftStrider/data/tracking): Classes that handles
+    * [`tracking`](app/src/main/java/com/kel2/swiftstrider/data/tracking): Classes that handles
       tracking like location tracking.
-* [`di`](app/src/main/java/com/kel2/SwiftStrider/di) : Hilt Modules.
-* [`domain`](app/src/main/java/com/kel2/SwiftStrider/domain): Contains common use case and
+* [`di`](app/src/main/java/com/kel2/swiftstrider/di) : Hilt Modules.
+* [`domain`](app/src/main/java/com/kel2/swiftstrider/domain): Contains common use case and
   interfaces.
-* [`ui`](app/src/main/java/com/kel2/SwiftStrider/ui): UI Layer of the app.
+* [`ui`](app/src/main/java/com/kel2/swiftstrider/ui): UI Layer of the app.
     * `nav`: Contains app navigation and destinations.
     * `screen`: Contains UI.
     * `theme`: Material3 theme.
     * `common`: UI utility classes and common components.
-* [`common`](app/src/main/java/com/kel2/SwiftStrider/common): Utility class used across the app.
+* [`common`](app/src/main/java/com/kel2/swiftstrider/common): Utility class used across the app.
 
 ## Build With
 
@@ -65,40 +65,3 @@ To load image asynchronously.
 
 [Vico](https://patrykandpatrick.com/vico/) :
 To show graphs in statistics screen.
-
-## Architecture
-
-This app follows MVVM architecture, Uni Directional Flow (UDF) pattern and Single architecture
-pattern.
-HLD of tracking architecture is shown in the below image:
-![tracking_architecture](https://github.com/kel2/run-track/assets/130966261/932e9df7-cf34-4902-aa84-73a6431ca236)
-
-## Installation
-
-Simple clone this app and open in Android Studio.
-
-### Google Map Integration
-
-Do these steps if you want to show google maps. The tracking
-functionalities will work as usual even if you don't do
-these step.
-
-1. Create and Get Google Maps API key by using this official
-   [guide](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
-2. Open `local.properties` file.
-3. Enter your API key like this:
-
-```
-MAPS_API_KEY=your_maps_api_key
-```
-
-## Project Status
-
-These features are left to be implemented:
-
-1. Profile menu implementation.
-2. Unit Tests
-3. Currently, we are storing (maps screenshot) bitmap directly into db in form of bytes
-   which is not good. Save the image to the storage and store only its uri or id.
-4. App Icon
-5. Suitable markers for the start, end, and current position.

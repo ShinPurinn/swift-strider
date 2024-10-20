@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kel2.SwiftStrider"
+    namespace = "com.kel2.swiftstrider"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.kel2.SwiftStrider"
+        applicationId = "com.kel2.swiftstrider"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

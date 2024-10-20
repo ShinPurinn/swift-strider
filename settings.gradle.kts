@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SwiftStrider"
+rootProject.name = "swiftstrider"
 include(":app")

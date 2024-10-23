@@ -17,7 +17,7 @@ sealed class Destination(val route: String) {
     }
 
     object CurrentRun : Destination("current_run") {
-        val currentRunUriPattern = "https://runtrack.sdevprem.com/$route"
+        val currentRunUriPattern = "https://swiftstrider.kel2.com/$route"
         val deepLinks = listOf(
             navDeepLink {
                 uriPattern = currentRunUriPattern

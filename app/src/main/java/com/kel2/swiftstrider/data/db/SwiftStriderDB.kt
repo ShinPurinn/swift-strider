@@ -13,9 +13,9 @@ import com.kel2.swiftstrider.data.model.Run
 )
 
 @TypeConverters(DBConverters::class)
-abstract class RunTrackDB : RoomDatabase() {
+abstract class SwiftStriderDB : RoomDatabase() {
     companion object {
-        const val RUN_TRACK_DB_NAME = "run_track_db"
+        const val SWIFT_STRIDER_DB_NAME = "swift_strider_db"
     }
 
     abstract fun getRunDao(): RunDao

@@ -11,8 +11,8 @@ import androidx.room.Room
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.kel2.swiftstrider.background.tracking.service.DefaultBackgroundTrackingManager
-import com.kel2.swiftstrider.data.db.RunTrackDB
-import com.kel2.swiftstrider.data.db.RunTrackDB.Companion.RUN_TRACK_DB_NAME
+import com.kel2.swiftstrider.data.db.SwiftStriderDB
+import com.kel2.swiftstrider.data.db.SwiftStriderDB.Companion.SWIFT_STRIDER_DB_NAME
 import com.kel2.swiftstrider.data.tracking.location.DefaultLocationTrackingManager
 import com.kel2.swiftstrider.data.tracking.location.LocationUtils
 import com.kel2.swiftstrider.data.tracking.timer.DefaultTimeTracker
@@ -50,15 +50,15 @@ abstract class AppModule {
         @Singleton
         fun provideRunningDB(
             @ApplicationContext context: Context
-        ): RunTrackDB = Room.databaseBuilder(
+        ): SwiftStriderDB = Room.databaseBuilder(
             context,
-            RunTrackDB::class.java,
-            RUN_TRACK_DB_NAME
+            SwiftStriderDB::class.java,
+            SWIFT_STRIDER_DB_NAME
         ).build()
 
         @Singleton
         @Provides
-        fun provideRunDao(db: RunTrackDB) = db.getRunDao()
+        fun provideRunDao(db: SwiftStriderDB) = db.getRunDao()
 
         @Provides
         @Singleton

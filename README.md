@@ -1,41 +1,47 @@
 # Swift Strider
 
-Swift Strider is a Fitness Tracking app utilizing modern Android technologies, including
-Jetpack Compose, MVVM architecture, and Google Maps API. The app allows users to
-track their running activities, displaying real-time routes on an interactive map
-while storing essential statistics using Room database.
+Swift Strider adalah aplikasi fitness yang memanfaatkan teknologi Android, termasuk
+Jetpack Compose, arsitektur MVVM, dan Google Maps API. Aplikasi ini memungkinkan pengguna untuk
+melacak aktivitas lari mereka, menampilkan rute waktu nyata di peta interaktif
+sambil menyimpan statistik penting menggunakan database Room.
 
-## Features
-1. Live tracking of running activity using GPS.
-2. Tracking of user's running path in Map using Google Map Compose library.
-3. Using Foreground Service, even the user closed the app and remove
-   from the background, this app stills continue to track user running stats.
-4. Room database to store and manage running statistics.
-5. Handling nested navigation, Deep linking, conditional navigation to on
-   boarding screen using Jetpack Navigation Component.
-6. New Jetpack Compose image picker - helps to pick image
-   without any permission.
-7. Paging3 integration.
-8. Dynamic color support in dark and light theme.
-9. Weekly Statistics with filters in graph.
+## Anggota Kelompok
+- Cliff Reynard (00000075936)
+- Maha Ligat Dewa Cindra (00000075361)
+- Andre Gamalion (00000076974)
+- Michael Squanto M (00000059593)
+
+## Fitur
+1. Pelacakan langsung aktivitas lari menggunakan GPS.
+2. Pelacakan jalur lari pengguna di Peta menggunakan perpustakaan Google Map Compose.
+3. Menggunakan Layanan Foreground, bahkan pengguna menutup aplikasi dan menghapusnya
+   dari latar belakang, aplikasi ini masih terus melacak statistik lari pengguna.
+4. Ruang database untuk menyimpan dan mengelola statistik yang sedang berjalan.
+5. Menangani navigasi bersarang, Tautan dalam, navigasi bersyarat ke aktif
+   layar boarding menggunakan Komponen Navigasi Jetpack.
+6. Pemilih gambar Jetpack Compose baru - membantu memilih gambar
+   tanpa izin apa pun.
+7. Integrasi Page3.
+8. Dukungan warna dinamis dalam tema gelap dan terang.
+9. Statistik Mingguan dengan filter dalam grafik.
 
 ## Package Structure
 
-* [`background`](app/src/main/java/com/kel2/swiftstrider/background): Handles background related
-  process like service.
-* [`data`](app/src/main/java/com/kel2/swiftstrider/data): Responsible for producing data. Contains
-  entity, database and tracking related classes.
-    * [`tracking`](app/src/main/java/com/kel2/swiftstrider/data/tracking): Classes that handles
-      tracking like location tracking.
-* [`di`](app/src/main/java/com/kel2/swiftstrider/di) : Hilt Modules.
-* [`domain`](app/src/main/java/com/kel2/swiftstrider/domain): Contains common use case and
-  interfaces.
-* [`ui`](app/src/main/java/com/kel2/swiftstrider/ui): UI Layer of the app.
-    * `nav`: Contains app navigation and destinations.
-    * `screen`: Contains UI.
+* [`background`](app/src/main/java/com/kel2/swiftstrider/background): Menangani terkait latar belakang
+  proses seperti layanan.
+* [`data`](app/src/main/java/com/kel2/swiftstrider/data): Bertanggung jawab untuk menghasilkan data. Berisi
+  entitas, database, dan kelas terkait pelacakan.
+    * [`tracking`](app/src/main/java/com/kel2/swiftstrider/data/tracking): Kelas yang menangani
+      pelacakan seperti pelacakan lokasi.
+* [`di`](app/src/main/java/com/kel2/swiftstrider/di) : Modul Gagang.
+* [`domain`](app/src/main/java/com/kel2/swiftstrider/domain): Berisi kasus penggunaan umum dan
+  antarmuka.
+* [`ui`](app/src/main/java/com/kel2/swiftstrider/ui): Lapisan UI aplikasi.
+    * `nav`: Berisi navigasi dan tujuan aplikasi.
+    * `screen`: Berisi UI.
     * `theme`: Material3 theme.
-    * `common`: UI utility classes and common components.
-* [`common`](app/src/main/java/com/kel2/swiftstrider/common): Utility class used across the app.
+    * `common`: UI utility classes & common components.
+* [`common`](app/src/main/java/com/kel2/swiftstrider/common): Kelas utilitas yang digunakan di seluruh aplikasi.
 
 ## Build With
 

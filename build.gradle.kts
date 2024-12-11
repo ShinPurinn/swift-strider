@@ -7,3 +7,4 @@ plugins {
     alias(libs.plugins.dagger.hilt.android) apply false
     alias(libs.plugins.jetbrains.kotlin.kapt) apply false
 }
+

@@ -33,8 +33,8 @@ paging = "3.2.0"
 accompanist-permissions = "0.31.5-beta"
 
 #plugin
-android-gradle = "8.3.2"
-kotlin = "1.9.20"
+android-gradle = "8.7.2"
+kotlin = "1.9.21"
 maps-secret = "2.0.1"
 
 #chart

@@ -6,6 +6,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.kapt)
 }
 
+
+
 android {
     namespace = "com.kel2.swiftstrider"
     compileSdk = 34
@@ -43,7 +45,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packagingOptions {
         resources {
@@ -127,6 +129,7 @@ dependencies {
 
 kapt {
     correctErrorTypes = true
+
 }
 
 secrets {

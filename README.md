@@ -33,7 +33,7 @@ sambil menyimpan statistik penting menggunakan database Room.
   entitas, database, dan kelas terkait pelacakan.
     * [`tracking`](app/src/main/java/com/kel2/swiftstrider/data/tracking): Kelas yang menangani
       pelacakan seperti pelacakan lokasi.
-* [`di`](app/src/main/java/com/kel2/swiftstrider/di) : Modul Gagang.
+* [`di`](app/src/main/java/com/kel2/swiftstrider/di) : Modul Hilt.
 * [`domain`](app/src/main/java/com/kel2/swiftstrider/domain): Berisi kasus penggunaan umum dan
   antarmuka.
 * [`ui`](app/src/main/java/com/kel2/swiftstrider/ui): Lapisan UI aplikasi.

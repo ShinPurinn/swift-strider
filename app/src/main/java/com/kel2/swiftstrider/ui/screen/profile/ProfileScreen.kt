@@ -91,23 +91,7 @@ private fun ProfileScreenContent(
                     modifier = Modifier
                         .padding(horizontal = 24.dp)
                 ) {
-                    SettingsItem(
-                        img = painterResource(id = R.drawable.ic_raising_hand),
-                        title = "Personal Parameter"
-                    )
-                    SettingsItem(
-                        img = painterResource(id = R.drawable.ic_trophy),
-                        title = "Achievements"
-                    )
-                    SettingsItem(
-                        img = painterResource(id = R.drawable.ic_gear),
-                        title = "Settings"
-                    )
-                    SettingsItem(
-                        img = painterResource(id = R.drawable.ic_telephone_receiver),
-                        title = "Our Contact",
-                        showDivider = false
-                    )
+                    // Should be settings but too lazy
                 }
             }
         }

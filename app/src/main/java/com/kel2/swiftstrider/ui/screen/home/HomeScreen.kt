@@ -422,19 +422,6 @@ private fun TopBarProfile(
             modifier = Modifier
                 .weight(1f)
         )
-
-        IconButton(
-            onClick = {},
-            modifier = Modifier
-                .size(24.dp)
-        ) {
-            Icon(
-                imageVector = ImageVector.vectorResource(id = R.drawable.ic_settings),
-                contentDescription = "Settings",
-                tint = MaterialTheme.colorScheme.onPrimary
-            )
-        }
-
     }
 }
 
